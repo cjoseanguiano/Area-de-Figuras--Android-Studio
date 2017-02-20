@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.determinarcalificacion.devix.areadefiguras.MainActivity">
+
+    <EditText
+        android:id="@+id/edtradioCirculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="Radio"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnCirculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:text="Circulo"
+        android:layout_alignBaseline="@+id/edtradioCirculo"
+        android:layout_alignBottom="@+id/edtradioCirculo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/edtbaseTriangulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Base Triangulo"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/btnCirculo"
+        android:layout_alignLeft="@+id/edtradioCirculo"
+        android:layout_alignStart="@+id/edtradioCirculo"
+        android:layout_marginTop="19dp" />
+
+    <Button
+        android:id="@+id/btnRectangulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edtalturaRectangulo"
+        android:layout_alignEnd="@+id/btnTriangulo"
+        android:layout_alignRight="@+id/btnTriangulo"
+        android:text="Rectangulo" />
+
+    <EditText
+        android:id="@+id/edtalturaTriangulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="Altura Triangulo"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/edtbaseTriangulo"
+        android:layout_alignLeft="@+id/edtbaseTriangulo"
+        android:layout_alignStart="@+id/edtbaseTriangulo" />
+
+    <EditText
+        android:id="@+id/edtbaseRectangulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtalturaTriangulo"
+        android:layout_alignStart="@+id/edtalturaTriangulo"
+        android:layout_below="@+id/edtalturaTriangulo"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="Base Rectangulo"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnTriangulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Triangulo"
+        android:layout_alignTop="@+id/edtbaseTriangulo"
+        android:layout_alignRight="@+id/btnCirculo"
+        android:layout_alignEnd="@+id/btnCirculo" />
+
+    <EditText
+        android:id="@+id/edtalturaRectangulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtbaseRectangulo"
+        android:layout_alignStart="@+id/edtbaseRectangulo"
+        android:layout_below="@+id/edtbaseRectangulo"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Altura Rectangulo"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/txtValores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtalturaRectangulo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:text="Valores" />
+</RelativeLayout>
